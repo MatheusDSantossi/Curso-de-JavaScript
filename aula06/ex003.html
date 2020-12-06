@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="id=edge">
+    <title>Curso em vídeo primeiro script</title>
+    <style>
+        body{
+            background-color: rgb(70, 60, 60);
+            color: whitesmoke;
+            font: normal 15pt bold;
+        }
+        h1{
+            color: rgb(247, 0, 255);
+        }
+        h2{
+            background-color: teal;
+            border-right-width: 10pt;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1> <!--Assim--> 
+    <p>Já me livrei da anátema</p>
+    <h2>Hello, world!</h2>
+    <script>
+        var n1 = Number.parseFloat(window.prompt("Digite um número:")) // String
+        var n2 = Number.parseInt(window.prompt("Digite outro número:")) // String
+        var n3 = Number(window.prompt("Digite mais um número: ")) // Ele funciona como int e floar como está acima
+        
+        // n1.toString() or String(n1)
+        // var s = parseInt(n1) + parseInt(n2)
+     
+        var s = n1 + n2 + n3
+
+        // var s = "JavaScrit"
+        
+        // 'Eu estou aprendendo s' // não faz interpolação que é uma introdução ou intercalação
+        // 'Eu estou aprendendo s' // usa concatenação
+        // `Eu estou aprendedno ${s}`// usa template String
+        //s.lenght // quantos caracteres a string tem
+        //s.toUpperCase() // tudo para 'MAIÚSCULAS'
+        //s.toLowerCase() // tudo para 'minúsculas'
+
+        alert(`A soma de ${n1}, ${n2} e ${n3} é igual a ${s}!`) // Concatenação
+    </script>
+</body>
+</html>
